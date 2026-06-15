@@ -1,0 +1,127 @@
+.features-section {
+  padding-top: 20px;
+  scroll-margin-top: 80px;
+
+  @include media(desktop) {
+    padding-top: 0;
+    scroll-margin-top: 100px;
+  }
+}
+
+.features-section-wrapper {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 1440px;
+    background-image: url(../img/features/features-lines.png);
+    background-repeat: no-repeat;
+    background-position: top 94px center;
+    background-size: auto;
+    position: relative;
+  }
+}
+
+.features-container {
+  @include media(desktop) {
+  }
+}
+
+.features-title {
+  @include media(desktop) {
+    position: absolute;
+    top: 215px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1076px;
+    min-height: 494px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+}
+
+.features-list-item {
+  background: #241f43;
+  border: 1px solid #7455ef;
+  border-radius: 28px;
+  padding: 23px;
+  background-image:
+    url(../img/features/features-top-bg.png),
+    url(../img/features/features-bottom-bg.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position:
+    top left,
+    bottom right;
+  background-size: auto, auto;
+
+  @include media(desktop) {
+    max-width: 306px;
+    position: absolute;
+
+    &:nth-child(1) {
+      top: 15px;
+      left: 0;
+    }
+
+    &:nth-child(2) {
+      top: 0;
+      right: 0;
+    }
+
+    &:nth-child(3) {
+      bottom: 0;
+      left: 0;
+    }
+
+    &:nth-child(4) {
+      bottom: 19px;
+      right: 0;
+    }
+  }
+}
+
+.features-item-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+  }
+}
+
+.features-item-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+
+  @include media(desktop) {
+    line-height: 1.2;
+  }
+}
+
+.features-item-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+
+  @include media(desktop) {
+  }
+}
