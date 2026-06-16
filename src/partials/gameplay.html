@@ -2,30 +2,54 @@
   <div class="gameplay-section-wrapper">
     <div class="container gameplay-container">
       <h2 class="section-title gameplay-title">How It Works</h2>
-      <ul class="gameplay-list">
-        <li class="gameplay-list-item">
-          <p class="gameplay-item-number">01</p>
-          <h3 class="gameplay-item-title">Analyze the Grid</h3>
-          <p class="gameplay-item-text">
-            Observe node positions, current flows, and shifting obstacles.
-          </p>
-        </li>
-        <li class="gameplay-list-item">
-          <p class="gameplay-item-number">02</p>
-          <h3 class="gameplay-item-title">Draw Vector Paths</h3>
-          <p class="gameplay-item-text">
-            Trace precise lines between nodes to guide energy toward targets.
-          </p>
-        </li>
-        <li class="gameplay-list-item">
-          <p class="gameplay-item-number">03</p>
-          <h3 class="gameplay-item-title">Optimize & React</h3>
-          <p class="gameplay-item-text">
-            Bend paths, create shortcuts, and trigger massive chain reactions to
-            solve each challenge.
-          </p>
-        </li>
-      </ul>
+      <div class="gameplay-content-wrapper">
+        <picture>
+          <source
+            srcset="./img/gameplay/gameplay-img-desk.png"
+            media="(min-width: 1440px)"
+            width="636"
+            height="672"
+          />
+          <source
+            srcset="./img/gameplay/gameplay-img-mob.png"
+            width="343"
+            height="362"
+          />
+          <img
+            class="gameplay-img"
+            src="./img/hero/gameplay-img-mob.png"
+            alt="Screenshot of the game"
+            width="343"
+            height="362"
+            loading="lazy"
+          />
+        </picture>
+        <ul class="gameplay-list">
+          <li class="gameplay-list-item">
+            <p class="gameplay-item-number">01</p>
+            <h3 class="gameplay-item-title">Analyze the Board</h3>
+            <p class="gameplay-item-text">
+              Take a look at what's blocking your way out.
+            </p>
+          </li>
+          <li class="gameplay-list-item">
+            <p class="gameplay-item-number">02</p>
+            <h3 class="gameplay-item-title">Tap & Slide</h3>
+            <p class="gameplay-item-text">
+              Remove blocking pieces and slide others into position to open
+              clear paths.
+            </p>
+          </li>
+          <li class="gameplay-list-item">
+            <p class="gameplay-item-number">03</p>
+            <h3 class="gameplay-item-title">Twist & Escape</h3>
+            <p class="gameplay-item-text">
+              Figure out the right moves and sequence to get everything out and
+              beat the level.
+            </p>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>

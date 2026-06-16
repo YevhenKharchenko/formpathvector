@@ -4,91 +4,101 @@
 }
 
 .gameplay-section-wrapper {
-  padding-top: 80px;
+  padding-top: 96px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
-    padding-top: 160px;
+    padding-top: 120px;
     max-width: 1440px;
-    background-image: url(../img/gameplay/gameplay-bg.png);
-    background-repeat: no-repeat;
-    background-position: top 264px center;
-    background-size: auto;
   }
 }
 
 .gameplay-container {
+  padding: 0;
+
   @include media(desktop) {
   }
 }
 
 .gameplay-title {
+  padding: 0 16px;
+
   @include media(desktop) {
+    padding: 0 72px;
+  }
+}
+
+.gameplay-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: end;
+  }
+}
+
+.gameplay-img {
+  @include media(desktop) {
+    min-width: 636px;
   }
 }
 
 .gameplay-list {
+  background: #088df2;
+  padding: 48px 16px;
   display: flex;
   flex-direction: column;
   gap: 40px;
 
   @include media(desktop) {
-    flex-direction: row;
-    justify-content: center;
-    align-items: start;
-    gap: 79px;
+    padding: 88px 72px 88px 110px;
+    border-radius: 24px 0 0 24px;
+    width: 100%;
+    max-width: 708px;
   }
 }
 
 .gameplay-list-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 16px;
 
   @include media(desktop) {
-    max-width: 306px;
   }
 }
 
 .gameplay-item-number {
-  border: 1px solid #7455ef;
-  border-radius: 100%;
-  background: #241f43;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 40px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1;
   color: #fff;
-  min-width: 120px;
-  height: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 32px;
 
   @include media(desktop) {
-    font-size: 40px;
   }
 }
 
 .gameplay-item-title {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 700;
-  font-size: 20px;
-  text-align: center;
+  font-size: 24px;
+  line-height: 1.33333;
   color: #fff;
-  margin-bottom: 24px;
 
   @include media(desktop) {
   }
 }
 
 .gameplay-item-text {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  text-align: center;
+  line-height: 1.5;
   color: #fff;
 
   @include media(desktop) {

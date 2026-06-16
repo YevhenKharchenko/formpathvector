@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://vectornodepath.pro/sitemap.xml
+Sitemap: https://formpathvector.site/sitemap.xml
