@@ -1,25 +1,19 @@
 .footer {
+  background: #088df2;
+
   @include media(desktop) {
   }
 }
 
 .footer-bg-wrapper {
-  padding-top: 140px;
+  padding-top: 24px;
   padding-bottom: 24px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/footer/footer-bg-mob.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: auto;
 
   @include media(desktop) {
-    padding-top: 160px;
-    padding-bottom: 40px;
     max-width: 1440px;
-    background-image: url(../img/footer/footer-bg-desk.png);
-    background-position: bottom center;
   }
 }
 
@@ -37,6 +31,34 @@
   }
 }
 
+.footer-logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  @include media(desktop) {
+  }
+}
+
+.footer-logo-img {
+  min-width: 70px;
+
+  @include media(desktop) {
+  }
+}
+
+.footer-logo-span {
+  font-family: 'Luckiest Guy', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.16667;
+  color: #fff;
+
+  @include media(desktop) {
+  }
+}
+
 .footer-nav {
   display: flex;
   flex-direction: column;
@@ -48,16 +70,6 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-  }
-}
-
-.footer-logo-link {
-  font-family: 'Syne', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  color: #fff;
-
-  @include media(desktop) {
   }
 }
 
@@ -83,8 +95,9 @@
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
+  line-height: 1.5;
   text-align: center;
-  color: #bcb4ef;
+  color: #fff;
 
   @include media(desktop) {
   }
@@ -94,6 +107,7 @@
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
+  line-height: 1.5;
   text-align: center;
   color: #fff;
 

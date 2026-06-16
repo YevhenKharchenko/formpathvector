@@ -2,14 +2,65 @@
   <div class="hero-bg-wrapper">
     <div class="container hero-container">
       <div class="hero-content-wrapper">
+        <picture>
+          <source
+            srcset="./img/hero/hero-title-desk.png"
+            media="(min-width: 1440px)"
+            width="451"
+            height="432"
+          />
+          <source
+            srcset="./img/hero/hero-title-mob.png"
+            width="310"
+            height="312"
+          />
+          <img
+            class="hero-title-img"
+            src="./img/hero/hero-title-mob.png"
+            alt="Screenshot of the game"
+            width="310"
+            height="312"
+          />
+        </picture>
         <div class="hero-text-wrapper">
-          <h1 class="hero-title">Draw the Perfect Path.</h1>
           <p class="hero-text">
-            Connect glowing nodes with smooth vector lines, reshape the network,
-            and solve energy flow puzzles in this precise strategy game.
+            It's basically a block puzzle game where you're tapping stuff out of
+            the way and sliding pieces around to escape. Pretty addictive once
+            you get the hang of it.
           </p>
+          <a
+            class="hero-cta-link"
+            href="https://play.google.com/store/apps/details?id=com.vectorlabz.block.escape&hl=en&gl=us"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Download on Google Play"
+          >
+            <img
+              class="hero-cta-img"
+              src="./img/hero/playstore.png"
+              alt="Google Play"
+              width="145"
+              height="51"
+            />
+          </a>
         </div>
       </div>
+      <picture>
+        <source
+          srcset="./img/hero/hero-img-desk.png"
+          media="(min-width: 1440px)"
+          width="464"
+          height="410"
+        />
+        <source srcset="./img/hero/hero-img-mob.png" width="343" height="303" />
+        <img
+          class="hero-img"
+          src="./img/hero/hero-img-mob.png"
+          alt="Screenshot of the game"
+          width="343"
+          height="303"
+        />
+      </picture>
     </div>
   </div>
 </section>
